@@ -1,29 +1,27 @@
 var cellularAutomata = [];
+var GOL;
 
 function setup() {
 
     createCanvas(600, 500);
     setFrameRate(60);
     cellularAutomata = new CellularAutomata();
+    GOL = new GameOfLife();
+    GOL.init();
 }
 
 function draw() {
     background(255);
-    cellularAutomata.display();
-  //  if(cellularAutomata.generation < height / cellularAutomata.w){
-        cellularAutomata.generate();
-    //}
+    GOL.generate();
+    GOL.display();
 }
 
-function mouseDragged(){
-    
+function mouseDragged() {
+
 }
 
 function keyPressed() {
-     for (var i = 0; i < key; i++) {
-        cellularAutomata.changeRuleSet();
-      
-    }
+  
 
 
 
