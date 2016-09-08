@@ -1,0 +1,4 @@
+var GameOfLife = function(){
+	
+	
+}
