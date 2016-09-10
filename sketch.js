@@ -4,10 +4,9 @@ var GOL;
 function setup() {
 
     createCanvas(600, 500);
-    setFrameRate(60);
-    cellularAutomata = new CellularAutomata();
+    setFrameRate(30);
     GOL = new GameOfLife();
-    GOL.init();
+  //  GOL.init();
 }
 
 function draw() {
@@ -18,6 +17,10 @@ function draw() {
 
 function mouseDragged() {
 
+}
+
+function mousePressed(){
+    GOL.init();
 }
 
 function keyPressed() {
