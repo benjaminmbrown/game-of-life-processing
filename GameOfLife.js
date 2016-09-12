@@ -48,6 +48,9 @@ var GameOfLife = function() {
             			neighbors += this.board[x+i][y+j];
             		}
             	}
+
+            	neighbors -= this.board[x][y];
+            	
             	//no neighbors/toomany/reproduce/stay same
             	if((this.board[x][y] == 1) && (neighbors <2)) this.next[x][y]=0;
             	else if((this.board[x][y] == 1) && (neighbors <3)) this.next[x][y]=0;
