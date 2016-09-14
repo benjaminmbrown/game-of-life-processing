@@ -6,3 +6,6 @@ Game of life modeled in Processing (p5.js)
 
 #removing self from neighbors
 <img src="https://media.giphy.com/media/l3vRkbEwsti2FGAa4/giphy.gif"/>
+
+#fin
+<img src="https://media.giphy.com/media/l0MYxyOTAP1RWN4ju/giphy.gif"/>
